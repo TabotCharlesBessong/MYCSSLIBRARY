@@ -1,0 +1,87 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+body{
+  background: url('./Images/pexels-photo-8134748.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.menu-bar{
+  background: rgb(0, 100, 0);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style-type: none;
+  color: #fff;
+}
+.menu-bar ul li{
+  width:120px;
+  margin: 12px;
+  padding: 12px;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover{
+  background: #2bab0d;
+  border-radius:4px;
+}
+.menu-bar .fa{
+  margin-right: 8px;
+}
+.sub-menu-1{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: rgb(0, 100, 0);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 2px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul a:hover{
+  color: #b2fa23;
+}
+
+.fa-angle-right{
+  float: right;
+}
+.sub-menu-2{
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 170px;
+  background: rgb(0, 100, 0);
+}
