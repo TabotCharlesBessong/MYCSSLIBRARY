@@ -33,6 +33,7 @@
     box-sizing: border-box;
 }
 
+{% comment %} making our rem === 10px to avoid to much caluclation when choosing size {% endcomment %}
 html{
     font-size: 62.5%;
 }
