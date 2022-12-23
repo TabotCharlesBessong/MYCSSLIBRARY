@@ -21,14 +21,18 @@ body{
 }
 .menu-bar ul {
   display: inline-flex;
-  list-style-type: none;
-  color: #fff;
+  /* list-style-type: none; */
+  /* color: #fff; */
 }
 .menu-bar ul li{
   width:120px;
   margin: 12px;
   padding: 12px;
+  /* list style type of none or any list styling handed with css is similar to the a li and the ul or ol */
+  list-style-type: none;
 }
+
+/* when you have a list of links , give the color to the links as thye are the final text */
 .menu-bar ul li a {
   text-decoration: none;
   color: #fff;
@@ -47,6 +51,7 @@ body{
 .menu-bar ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
+  /* absolute make is position it self only according to its parent positioning */
   background: rgb(0, 100, 0);
   margin-top: 15px;
   margin-left: -15px;
