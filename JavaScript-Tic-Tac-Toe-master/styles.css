@@ -33,20 +33,24 @@ body {
   cursor: pointer;
 }
 
+/* removing border top to the first 3 element */
 .cell:first-child,
 .cell:nth-child(2),
 .cell:nth-child(3) {
   border-top: none;
 }
 
+/* removing border left for the left element */
 .cell:nth-child(3n + 1) {
   border-left: none;
 }
 
+/* removing border bottom for the part of the cells below */
 .cell:nth-child(3n + 3) {
   border-right: none;
 }
 
+/* removing border bottom for the part of the cells below */
 .cell:last-child,
 .cell:nth-child(8),
 .cell:nth-child(7) {
