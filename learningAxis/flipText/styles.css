@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #555;
+}
+.container {
+  width: 100%;
+  position: relatvie;
+}
+div {
+  font-family: "poppins", sans-serif;
+  font-size: 100px;
+  font-weight: bolder;
+  text-align: center;
+  perspective: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+span {
+  /* 
+  The `display: inline-block;` property is necessary for the flipping effect to work because it allows the `transform` property to be applied correctly to each individual `<span>` element.
+
+  When you comment out the `display: inline-block;` for the `<span>` elements, they will default to `display: inline;`. In this case, the `transform` property will not have any effect since `transform` does not apply to inline elements.
+
+  By using `display: inline-block;`, each `<span>` element is treated as a block-level element, allowing the `transform` property to rotate the element around the X-axis and create the flipping effect.
+
+  So, to maintain the flipping effect, it's important to keep the `display: inline-block;` property for the `<span>` elements.
+   */
+  display: inline-block;
+  margin-left: -40px;
+  color: #1eccf3;
+  transform-origin: 50% 70%;
+  /* border: 2px solid red; */
+}
+span:nth-child(2n) {
+  color: #ffc024;
+}
+span:nth-child(1) {
+  animation: flipper 3s cubic-bezier(0.68, -0.55, 0.26, 1.55) both,
+    fadeIn 1s both;
+}
+span:nth-child(2) {
+  animation: flipper 3s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both,
+    fadeIn 1s both;
+}
+span:nth-child(3) {
+  animation: flipper 3s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both,
+    fadeIn 1s both;
+}
+span:nth-child(4) {
+  animation: flipper 3s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both,
+    fadeIn 1s both;
+}
+@keyframes flipper {
+  0% {
+    transform: rotateX(225deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+  }
+  80% {
+    transform: rotateY(-90deg);
+    transform:scale(1.2);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
