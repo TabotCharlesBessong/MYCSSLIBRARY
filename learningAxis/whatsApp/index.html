@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Contact Us</h2>
+		<p>Leave your message and we will get back to you shortly</p>
+		<form action="">
+			<div>
+				<span>
+					<label for="name">Name</label><br/>
+					<input id="name" type="text" placeholder="Full Name">
+				</span>
+				<span>
+					<label for="email">Email</label></br>
+					<input id="email" type="email" placeholder="Email">
+				</span>
+			</div>
+			<label for="message">Your Message</label><br/>
+			<textarea name="" id="message" rows="10" placeholder="Your Message"></textarea>
+			<button onclick="sendToWhatsapp()">Submit</button>
+		</form>
+	</div>
+
+	<script src="./index.js"></script>
+</body>
+</html>
